@@ -1,71 +1,17 @@
-let myName = "Michael Stringer";
+let friends = ["Matt", "Gio", "Logan", "Nate", "Mike"];
 
-console.log(myName);
+for (let i = 0; i < friends.length; i++) {
 
-const Number_Of_States = 50;
+    for (let j = 99; j > 0; j--) {
 
-console.log(Number_Of_States);
-
-var sum = (5 + 4);
-
-console.log(sum);
-
-var name1 = "Luke";
-
-if (name1.charCodeAt(0) == 76) {
-    console.log("Back of the line!")
-} else {
-    console.log("Next!")
-};
-// If var name is an "L" then the statement is true and "Back of the Line!" will display. Otherwise the statement is false and "Next" will appear.
-
-function sayHello() {
-    console.log("Hello World!")
-};
-
-sayHello();
-
-function checkAge(name, age) {
-    if (age >= 21) {
-    } else {
-        console.log("Sorry " + name + ", you aren't old enough to view this page!")
+    if(j >= 3) {
+        console.log(j+" lines of code in the file, "+j+" lines of code; "+friends[i]+" strikes one out, clears it all out,"+[j - 1]+" lines of code in the file.");
+    }
+        else if (j >= 2) {
+            console.log(j+" lines of code in the file, "+j+" lines of code; "+friends[i]+" strikes one out, clears it all out,"+[j - 1]+" line of the code in the file.");
+        }
+        else { 
+            console.log(j+" line of code in the file, "+j+" line of code; "+friends[i]+" strikes one out, clears it all out, no more lines of code in the file.");
+        };
     }
 };
-
-checkAge("John", 17);
-checkAge("James", 18);
-checkAge("Abby", 27);
-checkAge("Charles", 21);
-
-var vegetablesFavs = ["broccoli", "carrots", "asparagus", "peas", "corn"];
-
-for (var i = 0; i < vegetablesFavs.length; i++) {
-    console.log(vegetablesFavs[i]);
-};
-
-//Ask Luke about this!!//
-var random = [{ name: "Adam", age: 23 }, { name: "Mark", age: 15 }, { name: "Stacy", age: 25 }, { name: "John", age: 45 }, { name: "Amy", age: 18 }];
-
-for (var i = 0; i < 5; i++) {
-
-    checkAge(random[i].name, random[i].age);
-
-}
-
-function getLength(hello) {
-    return hello.length;
-};
-
-getLength("hello world");
-
-//Made up number to write/check code. need to figure out how to write previous lines.//
-var stringLength = getLength("helloworld")
-
-
-if (stringLength % 2 ===0) {
-    console.log("The world is nice and even!");
-}
-else {
-    console.log("The world is an odd place!");
-};
-
